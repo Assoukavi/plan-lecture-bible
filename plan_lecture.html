@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan de Lecture - Samuel & Psaumes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #ecf0f1;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 15px;
+      margin-right: 10px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Plan de Lecture sur 30 Jours</h1>
+  <h2>Livres de Samuel & Psaumes en Parallèle</h2>
+
+  <div class="button-container">
+    <button onclick="window.print()">📄 Imprimer</button>
+    <button onclick="filterTheme('repentance')">🎯 Voir les thèmes de repentance</button>
+    <button onclick="resetFilter()">🔄 Réinitialiser</button>
+  </div>
+
+  <table id="planTable">
+    <thead>
+      <tr>
+        <th>Jour</th>
+        <th>Lecture historique</th>
+        <th>Psaumes associés</th>
+        <th>Thème</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>1 Samuel 16–17</td><td>Psaumes 23, 144</td><td>Foi et courage de David</td></tr>
+      <tr><td>2</td><td>1 Samuel 18–20</td><td>Psaumes 59, 56, 11</td><td>Fuite et confiance</td></tr>
+      <tr><td>3</td><td>1 Samuel 21–22</td><td>Psaumes 34, 52, 142</td><td>Refuge et dénonciation</td></tr>
+      <tr><td>4</td><td>1 Samuel 23–24</td><td>Psaumes 54, 57</td><td>Trahison et miséricorde</td></tr>
+      <tr><td>5</td><td>1 Samuel 25–26</td><td>Psaumes 7, 18</td><td>Justice divine</td></tr>
+      <tr><td>6</td><td>1 Samuel 27–30</td><td>Psaumes 16, 17</td><td>Espoir en Dieu</td></tr>
+      <tr><td>7</td><td>2 Samuel 1</td><td>Psaume 60 (contexte)</td><td>Deuil noble</td></tr>
+      <tr><td>8</td><td>2 Samuel 2–5</td><td>Psaumes 78:65–72, 89:19–37</td><td>Fondation royale</td></tr>
+      <tr><td>9</td><td>2 Samuel 6</td><td>Psaumes 24, 132</td><td>Présence divine</td></tr>
+      <tr><td>10</td><td>2 Samuel 7</td><td>Psaume 89</td><td>Alliance divine</td></tr>
+      <tr><td>11</td><td>2 Samuel 8–10</td><td>Psaumes 20, 21</td><td>Succès militaire et faveur divine</td></tr>
+      <tr><td>12</td><td>2 Samuel 11</td><td>Psaume 51</td><td>Repentance après le péché</td></tr>
+      <tr><td>13</td><td>2 Samuel 12</td><td>Psaume 32</td><td>Pardon et restauration</td></tr>
+      <tr><td>14</td><td>2 Samuel 13–14</td><td>Psaume 38</td><td>Détresse à cause du péché familial</td></tr>
+      <tr><td>15</td><td>2 Samuel 15–16</td><td>Psaumes 3, 63</td><td>Fuite devant Absalom</td></tr>
+      <tr><td>16</td><td>2 Samuel 17–18</td><td>Psaume 61</td><td>Délivrance et douleur</td></tr>
+      <tr><td>17</td><td>2 Samuel 19–20</td><td>Psaume 133</td><td>Unité nationale et leadership</td></tr>
+      <tr><td>18</td><td>2 Samuel 21</td><td>Psaume 5</td><td>Justice divine face au sang versé</td></tr>
+      <tr><td>19</td><td>2 Samuel 22</td><td>Psaume 18 (même contenu)</td><td>Louange pour la délivrance</td></tr>
+      <tr><td>20</td><td>2 Samuel 23</td><td>Psaume 144</td><td>Héritage du roi et louange</td></tr>
+      <tr><td>21</td><td>2 Samuel 24</td><td>Psaume 30</td><td>Pardon et dévotion</td></tr>
+      <tr><td>22</td><td>1 Chroniques 10–11</td><td>Psaume 133</td><td>Unité du peuple</td></tr>
+      <tr><td>23</td><td>1 Chroniques 12–14</td><td>Psaumes 105, 96</td><td>Louange pour les victoires</td></tr>
+      <tr><td>24</td><td>1 Chroniques 15–16</td><td>Psaumes 96, 106</td><td>Célébration de l’arche</td></tr>
+      <tr><td>25</td><td>1 Chroniques 17</td><td>Psaume 132</td><td>Alliance éternelle</td></tr>
+      <tr><td>26</td><td>1 Chroniques 18–20</td><td>Psaume 60</td><td>Victoire malgré l’opposition</td></tr>
+      <tr><td>27</td><td>1 Chroniques 21</td><td>Psaume 30</td><td>Jugement et miséricorde</td></tr>
+      <tr><td>28</td><td>1 Chroniques 22–24</td><td>Psaume 15</td><td>Préparation du temple</td></tr>
+      <tr><td>29</td><td>1 Chroniques 25–27</td><td>Psaume 101</td><td>Gouvernance et intégrité</td></tr>
+      <tr><td>30</td><td>1 Chroniques 28–29</td><td>Psaume 72</td><td>Transmission et bénédiction</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    © 2025 - Plan biblique interactif conçu pour explorer les livres de Samuel, les Psaumes et les Chroniques en parallèle.
+  </footer>
+
+  <script>
+    function filterTheme(keyword) {
+      const rows = document.querySelectorAll("#planTable tbody tr");
+      rows.forEach(row => {
+        const theme = row.cells[3].textContent.toLowerCase();
+        row.style.display = theme.includes(keyword.toLowerCase()) ? "" : "none";
+      });
+    }
+    function resetFilter() {
+      const rows = document.querySelectorAll("#planTable tbody tr");
+      rows.forEach(row => row.style.display = "");
+    }
+  </script>
+</body>
+</html>
